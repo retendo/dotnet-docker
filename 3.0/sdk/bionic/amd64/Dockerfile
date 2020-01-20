@@ -3,6 +3,8 @@ FROM buildpack-deps:bionic-scm
 # Install .NET CLI dependencies
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+        coreutils \
+        lftp \
         libc6 \
         libgcc1 \
         libgssapi-krb5-2 \
